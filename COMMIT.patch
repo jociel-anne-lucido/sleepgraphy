@@ -1,0 +1,57 @@
+Index: app/src/main/res/layout/activity_recording.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_recording.xml	(date 1620214695030)
++++ app/src/main/res/layout/activity_recording.xml	(date 1620214695030)
+@@ -0,0 +1,48 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Recording"
++    android:background="@drawable/bd8bffd78009eab632d34294f1b760bb">
++
++    <ImageView
++        android:id="@+id/ss_logo"
++        android:layout_width="200dp"
++        android:layout_centerHorizontal="true"
++        android:layout_height="190dp"
++        android:layout_marginTop="130dp"
++        android:src="@drawable/cc"></ImageView>
++    <DigitalClock
++        android:id="@+id/digital_clock1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_marginTop="350dp"
++        android:layout_centerHorizontal="true"
++        android:gravity="center"
++        android:textColor="@color/white"
++        android:textSize="45dp"
++
++        android:textStyle="bold"></DigitalClock>
++    <Button
++        android:id="@+id/login_button"
++        android:layout_width="300dp"
++        android:layout_height="53dp"
++        android:layout_marginStart="24dp"
++        android:layout_centerHorizontal="true"
++        android:layout_below="@id/digital_clock1"
++
++        android:layout_marginTop="140dp"
++        android:background="@drawable/rectangle"
++        android:fontFamily="@font/arial_mt_rounded"
++        android:text="Stop Tracking"
++        android:backgroundTint="@color/heading"
++        android:textAllCaps="false"
++        android:textColor="@color/white"
++        android:textSize="18dp"></Button>
++
++
++
++</RelativeLayout>
+\ No newline at end of file
