@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "795969281529",
+    "project_id": "sleepgraphy-app",
+    "storage_bucket": "sleepgraphy-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795969281529:android:51e57e1e714f13fd03b128",
+        "android_client_info": {
+          "package_name": "com.example.sleepgraphyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795969281529-thi0vno3cqvn43fsjrrv2rb2ubnvvvpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9UdtR-Qx_thm2REFekaWbbzNQwWbCy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795969281529-thi0vno3cqvn43fsjrrv2rb2ubnvvvpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

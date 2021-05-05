@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Clock">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/bottom_nav"></FrameLayout>
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9A8C98"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/menu_button"
+        app:cnb_unselectedColor="@color/white"
+        app:cnb_radius="8dp"></com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+
+    <DigitalClock
+        android:id="@+id/digital_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/accent"
+        android:textSize="35dp"
+
+        android:textStyle="bold"></DigitalClock>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/circle2"></TextView>
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/arial_mt_rounded"
+        android:textColor="@color/accent"
+        android:textSize="45dp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/date"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/digital_clock"
+        android:textColor="@color/accent"
+        android:textSize="25dp"
+        android:fontFamily="@font/arial_mt_rounded"
+        android:textAlignment="center"
+        android:textStyle="bold"></TextView>
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:background="@drawable/square"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile">
+    </ImageView>
+
+
+</RelativeLayout>
